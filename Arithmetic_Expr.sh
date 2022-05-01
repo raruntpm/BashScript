@@ -5,6 +5,7 @@ second_num=0
 
 
 #comment added more comments super
+#second comment
 
 echo -n "Enter the first number --> "
 read first_num
