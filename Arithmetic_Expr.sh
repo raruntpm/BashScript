@@ -3,6 +3,7 @@
 first_num=0
 second_num=0
 
+#comment added
 echo -n "Enter the first number --> "
 read first_num
 echo -n "Enter the second number -> "
