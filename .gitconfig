@@ -1,0 +1,48 @@
+[user]
+	name = Arun Ramadoss 
+	email = arun.ramadoss@microchip.com
+[alias]
+        #shorten common commands
+	st = status
+	co = checkout
+	br = branch
+        d = diff
+	ci = commit
+	logone = log --pretty=oneline --abbrev-commit --graph
+        ciamend = commit --amend
+        diffc = diff --cached
+        b4 = "!f() { b4 am -t -o - $@ | git am -3; }; f"
+[b4]
+        midmask = https://lore.kernel.org/r/%s
+[core]
+        abbrev = 12
+[pretty]
+        fixes = Fixes: %h (\"%s\")
+[format]
+        subjectPrefix = PATCH net-next
+        ;to = <rarun.tpm88@gmail.com>
+        ;signOff = true
+        coverLetter = auto
+        coverFromDescription = auto
+        ;useAutoBase = true
+        ;outputDirectory = ~/linux_dd/ptp_patch
+[diff]
+	tool = p4merge
+[sendemail]
+        ;from = Arun Ramadoss <arun.ramadoss@microchip.com>
+        smtpserver = mx.microchip.com
+        ;smtpserver = outlook.office365.com
+	smtpdebug = 1
+	suppresscc = author
+	suppresscc = sob
+	suppresscc = self
+	suppresscc = misc-by
+	confirm = always
+[difftool]
+	prompt = 0
+[help]
+        autocorrect = 30
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	path = /usr/local/bin/p4merge
